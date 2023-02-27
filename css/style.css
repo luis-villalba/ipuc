@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Actor&family=Oswald&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: white;
+  font-size: 18px;
+  height: 100vh;
+}
+
+a {
+  color: #34f703;
+  text-shadow: 2px 2px 5px black;
+}
+
+header {
+  font-family: "Oswald", sans-serif;
+  background: url("../images/b.png"), url("../images/t.jpg");
+  background-size: 400px, cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+header nav {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  padding: 5px 20px;
+  border-bottom: 2px solid rgb(202, 202, 202);
+}
+header nav ul {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+header nav ul a {
+  margin-right: 20px;
+}
+header nav figure img {
+  width: 55px;
+}
+header section {
+  display: grid;
+  grid-template-columns: 300px 2fr;
+  padding: 50px 20px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  background: rgba(0, 0, 0, 0.1);
+}
+header section blockquote {
+  padding: 0 0 0 600px;
+}
+header section blockquote p {
+  margin: 10px;
+}
+header section blockquote h1, header section blockquote p {
+  color: #fbfbfd;
+  background: rgba(12, 12, 12, 0.411);
+}
+header section form {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+header section form input, header section form button {
+  display: block;
+  margin-bottom: 20px;
+}
+header section form input {
+  padding: 10px;
+  width: calc(100% - 25px);
+  background: rgba(233, 240, 133, 0.815);
+}
+header section form button {
+  width: 100%;
+  font-size: 1em;
+  cursor: pointer;
+}
+header section form a {
+  display: block;
+  text-align: center;
+}
+
+main {
+  padding: 10px 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  row-gap: 60px;
+  background: rgba(137, 215, 221, 0.349);
+}
+main .fondo1 {
+  background: url("../images/predica.jpg");
+  background-size: 180px;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+main .fondo2 {
+  background: url("../images/ii.jpg");
+  background-size: 458px;
+  background-position-y: 90px;
+  margin: 0 0 80px;
+  background-repeat: no-repeat;
+  padding: 40px;
+}
+main .fondo3 {
+  background: url("../images/musica.jpg");
+  background-size: 390px;
+  background-position-y: 150px;
+  margin: 0 0 80px;
+  background-repeat: no-repeat;
+  padding: 40px;
+}
+main .fondo4 {
+  background: url("../images/c.jpg");
+  background-size: 400px;
+  background-position-y: 210px;
+  margin: 0 0 80px;
+  background-repeat: no-repeat;
+  padding: 40px;
+}
+main section {
+  margin: 16px;
+  position: relative;
+}
+main section .explica1 {
+  margin: 65px 0 0 10px;
+}
+main section .explica2 {
+  margin: 115px 0 0 20px;
+}
+main section .explica3 {
+  margin: 175px 0 0 20px;
+}
+main section blockquote h1, main section blockquote p {
+  color: #fbfbfd;
+  background: rgba(12, 12, 12, 0.651);
+}
+main video {
+  position: absolute;
+  top: o;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .capa {
+  position: absolute;
+  top: o;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(21, 231, 14);
+  mix-blend-mode: overlay;
+}
+
+footer {
+  width: 80%;
+  margin: 120px 80px 10px 10px;
+}
+footer nav {
+  background: rgba(4, 60, 245, 0.507);
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  padding: 20px 20px;
+  border-bottom: 2px solid rgb(202, 202, 202);
+}
+footer nav ul {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+footer nav ul li {
+  margin-right: 20px;
+}
+footer nav ul li a {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 980px) {
+  body {
+    background: red;
+  }
+  header {
+    font-family: "Oswald", sans-serif;
+    background: url("../images/t.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  header nav {
+    grid-template-columns: 30px 1fr;
+  }
+  header section {
+    grid-template-columns: 1fr;
+  }
+  header section blockquote {
+    display: none;
+  }
+  header #logo {
+    display: none;
+  }
+  main {
+    height: 95%;
+    grid-template-columns: 1fr;
+    padding: 20px 5px;
+  }
+  main .fondo1 {
+    background: url("../images/predica.jpg");
+    background-size: 80px;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  main .fondo2 {
+    background: url("../images/ii.jpg");
+    background-size: 80px;
+    background-position-y: 0;
+    background-position: center;
+    margin: 0;
+    background-repeat: no-repeat;
+    padding: 0;
+  }
+  main .fondo3 {
+    background: url("../images/OIP.jpg");
+    background-size: 60px;
+    background-position-y: 0;
+    background-position: center;
+    margin: 0;
+    background-repeat: no-repeat;
+    padding: 0;
+  }
+  main .fondo4 {
+    background: url("../images/c.jpg");
+    background-size: 80px;
+    background-position-y: 0;
+    background-position: center;
+    margin: 0;
+    background-repeat: no-repeat;
+    padding: 0;
+  }
+  main section {
+    margin: 0;
+    border-bottom: 1px solid rgb(202, 202, 202);
+  }
+  main section .explica1 {
+    margin: 0;
+  }
+  main section .explica2 {
+    margin: 0;
+  }
+  main section .explica3 {
+    margin: 0;
+  }
+  main video {
+    height: 95%;
+  }
+  main .capa {
+    height: 95%;
+  }
+  footer {
+    background: rgb(255, 238, 6);
+  }
+  footer nav {
+    grid-template-columns: 1fr;
+  }
+  footer section {
+    display: none;
+  }
+}
+@media screen and (min-width: 900px) {
+  body {
+    background: green;
+  }
+  body #logo-mini {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
