@@ -33,6 +33,7 @@ header {
 header nav {
   display: grid;
   grid-template-columns: 200px 1fr;
+  background: rgba(248, 248, 248, 0.753);
   padding: 5px 20px;
   border-bottom: 2px solid rgb(202, 202, 202);
 }
@@ -40,6 +41,8 @@ header nav ul {
   display: inline-flex;
   align-items: center;
   justify-content: flex-end;
+}
+header nav ul li {
   margin-right: 20px;
 }
 header nav ul a {
@@ -150,7 +153,7 @@ main video {
   top: o;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 85%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -159,23 +162,27 @@ main .capa {
   top: o;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 85%;
   background: rgb(21, 231, 14);
   mix-blend-mode: overlay;
 }
 
 footer {
   width: 80%;
-  margin: 120px 80px 10px 10px;
+  margin: 199px 80px 10px 90px;
 }
 footer nav {
   background: rgba(4, 60, 245, 0.507);
   display: grid;
   grid-template-columns: 200px 1fr;
-  padding: 20px 20px;
+  padding: 70px 20px;
   border-bottom: 2px solid rgb(202, 202, 202);
 }
+footer nav section p {
+  margin: 0 0 0 200px;
+}
 footer nav ul {
+  margin: 0 290px;
   display: inline-flex;
   align-items: center;
   justify-content: flex-end;
@@ -194,6 +201,7 @@ footer nav ul li a {
   header {
     font-family: "Oswald", sans-serif;
     background: url("../images/t.jpg");
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -276,11 +284,73 @@ footer nav ul li a {
     display: none;
   }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 800px) {
   body {
     background: green;
   }
   body #logo-mini {
+    display: none;
+  }
+  body header section {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    padding: 50px 20px;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  body header section blockquote {
+    padding: 0 0 0 200px;
+  }
+  body header section blockquote p {
+    margin: 10px;
+  }
+  body main .fondo1 {
+    background: url("../images/predica.jpg");
+    background-size: 190px;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  body main .fondo2 {
+    background: url("../images/ii.jpg");
+    background-size: 100px;
+    background-position-y: 0;
+    background-position: center;
+    margin: 0;
+    background-repeat: no-repeat;
+    padding: 0;
+  }
+  body main .fondo3 {
+    background: url("../images/OIP.jpg");
+    background-size: 100px;
+    background-position-y: 0;
+    background-position: center;
+    margin: 0;
+    background-repeat: no-repeat;
+    padding: 0;
+  }
+  body main .fondo4 {
+    background: url("../images/c.jpg");
+    background-size: 80px;
+    background-position-y: 0;
+    background-position: center;
+    margin: 0;
+    background-repeat: no-repeat;
+    padding: 0;
+  }
+  body main video {
+    height: 85%;
+  }
+  body main .capa {
+    height: 85%;
+  }
+  body footer {
+    background: rgb(255, 238, 6);
+  }
+  body footer nav {
+    grid-template-columns: 1fr;
+  }
+  body footer nav section {
     display: none;
   }
 }/*# sourceMappingURL=style.css.map */

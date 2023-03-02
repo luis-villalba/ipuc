@@ -7,7 +7,7 @@ $gris-claro: rgb(202, 202, 202)
 $link: #34f703
 
 body
-    background: white 
+    background: white
     font-size: 18px
     height: 100vh
 a
@@ -16,32 +16,27 @@ a
 header
     font-family: 'Oswald', sans-serif
     background: url('../images/b.png'), url('../images/t.jpg')
-    background-size:  400px,cover
+    background-size: 400px,cover
     background-position: center
-    
-    background-repeat: no-repeat
-   
 
+    background-repeat: no-repeat
 
     nav
         display: grid
         grid-template-columns: 200px 1fr
-        background:rgba(248, 248, 248, 0.753)
+        background: rgba(248, 248, 248, 0.753)
         padding: 5px $pd_space
         border-bottom: 2px solid $gris-claro
 
         ul
 
             display: inline-flex
-            align-items: center  
+            align-items: center
             justify-content: flex-end
             li
-            margin-right: $pd_space  
+                margin-right: $pd_space
             a
-                  margin-right: $pd_space 
-
-         
-            
+                margin-right: $pd_space
 
         figure
             img
@@ -49,86 +44,84 @@ header
     section
         display: grid
         grid-template-columns: 300px 2fr
-       
+
         padding: 50px $pd_space
-        column-gap: 50px 
+        column-gap: 50px
         background: $transparente
         blockquote
             padding: 0 0 0 600px
             p
                 margin: 10px
-           
+
             h1,p
-                
+
                 color: #fbfbfd
                 background: rgba(12, 12, 12, 0.411)
         form
             background: $transparente
             padding: $pd_space
-            
+
             input,button
-               
+
                 display: block
                 margin-bottom: $pd_space
             input
-                padding: 10px  
+                padding: 10px
                 width: calc(100% - 25px )
                 background: rgba(233, 240, 133, 0.815)
             button
-                 width: 100%  
-                 font-size: 1em  
-                 cursor: pointer  
-                 
+                width: 100%
+                font-size: 1em
+                cursor: pointer
+
             a
                 display: block
                 text-align: center
 main
     padding: 10px 80px
     display: grid
-    grid-template-columns: 1fr  1fr 1fr 1fr
+    grid-template-columns: 1fr 1fr 1fr 1fr
     column-gap: 40px
     row-gap: 60px
-  
+
     background: rgba(137, 215, 221, 0.349)
-    
+
     .fondo1
         background: url('../images/predica.jpg')
-        background-size:  180px
+        background-size: 180px
         background-position: center top
         background-repeat: no-repeat
-        
+
     .fondo2
         background: url('../images/ii.jpg')
-        background-size:  458px
+        background-size: 458px
         background-position-y: 90px
         margin: 0 0 80px
         background-repeat: no-repeat
         padding: 40px
-        
+
     .fondo3
         background: url('../images/musica.jpg')
-        background-size:  390px
+        background-size: 390px
         background-position-y: 150px
         margin: 0 0 80px
         background-repeat: no-repeat
         padding: 40px
-       
-        
+
     .fondo4
         background: url('../images/c.jpg')
-        background-size:  400px
+        background-size: 400px
         background-position-y: 210px
         margin: 0 0 80px
         background-repeat: no-repeat
         padding: 40px
-        
 
     section
-        
+
         margin: 16px
         position: relative
         .explica1
-           
+
             margin: 65px 0 0 10px
         .explica2
             margin: 115px 0 0 20px
@@ -136,50 +129,54 @@ main
             margin: 175px 0 0 20px
 
         blockquote
-            
-           
+
             h1,p
-                               
+
                 color: #fbfbfd
                 background: rgba(12, 12, 12, 0.651)
-                
+
     video
         position: absolute
         top: o
         left: 0
         width: 100%
-        height:100%
+        height: 85%
         object-fit: cover
-    
+
     .capa
         position: absolute
         top: o
         left: 0
         width: 100%
-        height:100%
+        height: 85%
         background: rgb(21, 231, 14)
         mix-blend-mode: overlay
 footer
     width: 80%
-    margin: 120px 80px 10px 10px
-    
+    margin: 199px 80px 10px 90px
 
     nav
         background: rgba(4, 60, 245, 0.507)
         display: grid
         grid-template-columns: 200px 1fr
         
-        padding: 20px $pd_space
+
+        padding: 70px $pd_space
         border-bottom: 2px solid $gris-claro
+        section
+            p
+
+                margin: 0 0 0 200px
         ul
+            margin: 0 290px
             display: inline-flex
-            align-items: center  
+            align-items: center
             justify-content: flex-end
             li
                 margin-right: $pd_space
 
                 a
-                    margin-right: $pd_space 
+                    margin-right: $pd_space
 
 @media screen and (max-width: 980px)
     body
@@ -187,9 +184,9 @@ footer
     header
         font-family: 'Oswald', sans-serif
         background: url('../images/t.jpg')
-        background-size:cover
+        background-size: cover
         background-position: center
-    
+
         background-repeat: no-repeat
         nav
             grid-template-columns: 30px 1fr
@@ -199,46 +196,43 @@ footer
                 display: none
 
         #logo
-            display: none  
+            display: none
     main
-        height:95%
+        height: 95%
         grid-template-columns: 1fr
         padding: 20px 5px
         .fondo1
 
             background: url('../images/predica.jpg')
-            background-size:  80px
+            background-size: 80px
             background-position: center top
             background-repeat: no-repeat
         .fondo2
 
             background: url('../images/ii.jpg')
-            background-size:  80px
+            background-size: 80px
             background-position-y: 0
             background-position: center
-            margin: 0 
+            margin: 0
             background-repeat: no-repeat
             padding: 0
         .fondo3
             background: url('../images/OIP.jpg')
-            background-size:  60px
+            background-size: 60px
             background-position-y: 0
             background-position: center
-            margin: 0 
+            margin: 0
             background-repeat: no-repeat
             padding: 0
         .fondo4
             background: url('../images/c.jpg')
-            background-size:  80px
+            background-size: 80px
             background-position-y: 0
             background-position: center
-            margin: 0 
+            margin: 0
             background-repeat: no-repeat
             padding: 0
 
-
-
-       
         section
             margin: 0
             border-bottom: 1px solid $gris-claro
@@ -250,11 +244,9 @@ footer
                 margin: 0
         video
 
-            height:95%
+            height: 95%
         .capa
-            height:95%
-
-
+            height: 95%
 
     footer
         background: rgb(255, 238, 6)
@@ -263,21 +255,62 @@ footer
         section
             display: none
 
-        
-        
-       
-            
-@media screen and (min-width: 900px)
+@media screen and (min-width: 800px)
     body
-        background: green 
+        background: green
         #logo-mini
-            display: none 
-        
-    
+            display: none
+        header
 
-   
-        
-        
-    
-        
-       
+            section
+                display: grid
+                grid-template-columns: 300px 1fr
+                padding: 50px $pd_space
+                column-gap: 50px
+                background: $transparente
+                blockquote
+
+                    padding: 0 0 0 200px
+                    p
+                        margin: 10px
+        main
+            .fondo1
+                background: url('../images/predica.jpg')
+                background-size: 190px
+                background-position: center top
+                background-repeat: no-repeat
+            .fondo2
+                background: url('../images/ii.jpg')
+                background-size: 100px
+                background-position-y: 0
+                background-position: center
+                margin: 0
+                background-repeat: no-repeat
+                padding: 0
+            .fondo3
+                background: url('../images/OIP.jpg')
+                background-size: 100px
+                background-position-y: 0
+                background-position: center
+                margin: 0
+                background-repeat: no-repeat
+                padding: 0
+            .fondo4
+                background: url('../images/c.jpg')
+                background-size: 80px
+                background-position-y: 0
+                background-position: center
+                margin: 0
+                background-repeat: no-repeat
+                padding: 0
+            video
+                height: 85%
+            .capa
+                height: 85%
+        footer
+            background: rgb(255, 238, 6)
+            nav
+                grid-template-columns: 1fr
+                section
+                    display: none
+           
